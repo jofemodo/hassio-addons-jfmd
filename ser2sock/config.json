@@ -1,0 +1,30 @@
+{
+  "name": "serial to socket gateaway",
+  "version": "1.0.0",
+  "slug": "ser2sock",
+  "description": "Implementation of ser2sock for Home Assistant.",
+  "url": "https://github.com/goyney/hassio-addon-ser2sock/",
+  "startup": "services",
+  "boot": "auto",
+  "auto_uart": true,
+  "ports": {
+    "4001/tcp": 4001
+  },
+  "ports_description": {
+    "4001/tcp": "ser2sock socket port"
+  },
+  "devices": [
+    "/dev/hidraw0"
+  ],
+  "options": {
+    "serialDevice": "/dev/hidraw0",
+    "baudRate": 2400,
+    "port": 4001
+  },
+  "schema": {
+    "serialDevice": "str",
+    "baudRate": "int",
+    "port": "port"
+  },
+  "arch": ["amd64", "armv7", "armhf", "i386" , "aarch64"]
+}

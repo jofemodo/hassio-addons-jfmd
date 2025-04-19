@@ -1,0 +1,30 @@
+{
+  "name": "serial to socket relay",
+  "version": "1.0.0",
+  "slug": "ser2net",
+  "description": "Implementation of ser2net for Home Assistant.",
+  "url": "https://github.com/jofemodo/hassio-addons-jfmd/ser2net/",
+  "startup": "services",
+  "boot": "auto",
+  "auto_uart": true,
+  "ports": {
+    "4001/tcp": 4001
+  },
+  "ports_description": {
+    "4001/tcp": "ser2net socket port"
+  },
+  "devices": [
+    "/dev/hidraw0"
+  ],
+  "options": {
+    "serialDevice": "/dev/hidraw0",
+    "baudRate": 2400,
+    "port": 4001
+  },
+  "schema": {
+    "serialDevice": "str",
+    "baudRate": "int",
+    "port": "port"
+  },
+  "arch": ["amd64", "armv7", "armhf", "i386" , "aarch64"]
+}
