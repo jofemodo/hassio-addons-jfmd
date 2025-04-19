@@ -5,7 +5,7 @@ ENV LANG C.UTF-8
 
 # Istall the ser2net application
 RUN \
-  apk add --no-cache ser2net
+  apk add --no-cache ser2net jq
 
 WORKDIR /
 
