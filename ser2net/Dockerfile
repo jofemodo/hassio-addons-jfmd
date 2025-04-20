@@ -3,7 +3,7 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-# Istall the ser2net application
+# Install the ser2net application
 RUN \
   apk add --no-cache ser2net jq
 
