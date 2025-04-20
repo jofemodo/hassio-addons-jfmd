@@ -1,6 +1,6 @@
 {
   "name": "serial to socket relay",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "slug": "ser2net",
   "description": "Implementation of ser2net for Home Assistant.",
   "url": "https://github.com/jofemodo/hassio-addons-jfmd/ser2net/",
